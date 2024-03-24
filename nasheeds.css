@@ -1,0 +1,425 @@
+html {
+  margin: 0;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+  background-color: #08192C;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+  margin-left: -10px;
+  display: block;
+}
+
+.nav-container a {
+  font-family: Segoe UI;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+}
+
+.home-page:hover,
+.nasheeds-page:hover,
+.donations-page:hover,
+.about-page:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.help-page:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.help-page:not(:hover) {
+  transition: 0.5s;
+}
+
+.menu-container{
+  display: block;
+  border: 1px solid #1C294A;
+  background-color: #1C294A;
+  display: flex;
+  justify-content: right;
+}
+
+.btn-menu {
+  border: none;
+  background-color: #222222;
+  padding: 10px 16px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  display: inline;
+}
+
+.a {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.nav-content {
+  display: none;
+  position: relative;
+  background-color: #1C294A;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn-menu:active + .nav-content {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-menu:active {
+  padding: 13px 20px;
+  background-color: #f2f2f2;
+  color: #222222;
+  transition: 0.15s;
+}
+
+.btn-menu:not(:active) {
+  padding: 10px 16px;
+  transition: 0.15s;
+}
+
+.span {
+  display: none;
+}
+
+/* DUPLICATES */
+
+.nav-content-2 {
+  display: none;
+}
+
+/* FAMOUS ARTISTS */
+
+.artist-container {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #434750;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+}
+
+.artist-content {
+  padding-top: 100px;
+  margin-bottom: auto;
+}
+
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+ul li {
+  position: relative;
+  list-style-type: none;
+  width: 210px;
+  background-color: #3e3f46;
+  padding: 15px;
+  color: #999;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: var(--i);
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: #2e3133;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #35383e;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+ul li:last-child::after {
+  box-shadow: -100px 100px 20px rgba(0,0,0,0.25);
+}
+
+/* HOVERING */
+
+ul li:hover {
+  color: #fff;
+  background-color: #33a3ee;
+  transform: translateX(-50px);
+}
+
+ul li:hover::before {
+  background-color: #1f5378;
+}
+
+ul li:hover::after {
+  background-color: #2982b9;
+}
+
+ul li:hover:first-child {
+  background-color: #DAA520;
+  transform: translateX(-50px);
+}
+
+ul li:hover:first-child::before {
+  background-color: #a78c16;
+}
+
+ul li:hover:first-child::after {
+  background-color: #a88617;
+}
+
+/* NASHEEDS EXTRA*/
+
+.nasheeds-container {
+  padding-bottom: 30px;
+  background-color: #708090;
+  /* background: linear-gradient(to bottom, #4b4a4a 0%, #30414e 100%); */
+  /* background-color: rgb(92, 104, 116); */
+}
+
+.circle-pfp {
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding-top: 10px;
+  border-radius: 50%;
+  box-shadow: 0.1rem 0.4rem rgb(0, 0, 0, 0.6);
+}
+
+.search-container {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  
+}
+
+/* .search-bar {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10rem;
+  box-shadow: 0.1rem 0.6rem rgb(0, 0, 0, 0.6);
+  text-align: right;
+  position: relative;
+  top: -40px;
+}
+
+.search-bar input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  width: 150px;
+  height: 47px;
+  border: none;
+  border-radius: 10rem;
+  background-color: none;
+  font-size: 1rem;
+  margin-left: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 0;
+  position: absolute;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  transform: translateX(-50%);
+} */
+
+/* TITLE TOOLBAR */
+
+.title-toolbar {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid white;
+  position: relative;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.id {
+  margin-left: 30px;
+  font-style: italic;
+  color: rgb(190, 189, 189);
+}
+
+.txt-title {
+  margin-left: 25px;
+  color: rgb(190, 189, 189);
+  text-transform: uppercase;
+}
+
+/* NASHEEDS */
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow-x: hidden;
+}
+
+.btn-box {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50px;
+  right: 1px;
+  display: flex;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: hsl(0, 0%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.btn-box:hover {
+  background-color: hsl(0, 0%, 63%);
+}
+
+.fa-play, .fa-pause {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: rgb(190, 189, 189);
+  cursor: pointer;
+}
+
+.audio-name {
+  color: rgb(190, 189, 189);
+}
+
+.fa-download {
+  color: rgb(190, 189, 189);
+  position: absolute;
+  font-size: 30px;
+  right: 0;
+  margin: 9px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #0A183D;
+  margin-top: 1px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-left: 10px;
+  display: block;
+}
+
+.txt-copyright {
+  color: rgb(104, 103, 103);
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-wrap: wrap;
+}
+
+.tiktok-container {
+  display: block;
+  margin-top: 20px;
+}
+
+/* MEDIA QUERIES FOR PC */
+
+@media (min-width: 1024px) {
+
+  .nav-content-2 {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .home-page-2:hover,
+  .nasheeds-page-2:hover,
+  .donations-page-2:hover,
+  .about-page-2:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  .help-page-2:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+
+  .help-page-2:not(:hover) {
+    transition: 0.5s;
+  }
+
+  .span-2 {
+    display: flex;
+    align-items: center;
+  }
+
+    .guide-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+}

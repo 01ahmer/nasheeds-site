@@ -1,0 +1,454 @@
+html {
+  margin: 0;
+}
+
+body {
+  height: auto;
+  margin: 0;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+  background-color: #08192C;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+  margin-left: -10px;
+  display: block;
+}
+
+.nav-container a {
+  font-family: Segoe UI;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  display: block;
+}
+
+.home-page:hover,
+.nasheeds-page:hover,
+.donations-page:hover,
+.about-page:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.help-page:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.help-page:not(:hover) {
+  transition: 0.5s;
+}
+
+.menu-container{
+  display: block;
+  border: 1px solid #1C294A;
+  background-color: #1C294A;
+  display: flex;
+  justify-content: right;
+}
+
+.btn-menu {
+  border: none;
+  background-color: #222222;
+  padding: 10px 16px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  display: inline;
+}
+
+.a {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.nav-content {
+  display: none;
+  position: relative;
+  background-color: #1C294A;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn-menu:active + .nav-content {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-menu:active {
+  padding: 13px 20px;
+  background-color: #f2f2f2;
+  color: #222222;
+  transition: 0.15s;
+}
+
+.btn-menu:not(:active) {
+  padding: 10px 16px;
+  transition: 0.15s;
+}
+
+.span {
+  display: none;
+}
+
+/* DUPLICATES */
+
+.nav-content-2 {
+  display: none;
+}
+
+
+/*INTRODUCTION*/
+
+.title-container {
+  text-align: left;
+  text-wrap: wrap;
+  background-color: #0A183D;
+  padding-bottom: 100px;
+}
+
+.title-content {  
+  margin-left: 15px;
+  padding-top: 90px;
+}
+
+.lstn {
+  font-family: Segoe UI;
+  font-size: 45px;
+  color: rgb(252, 2, 84);
+  display: inline;
+  font-weight: 600;
+}
+
+.to {
+  font-family: Segoe UI;
+  font-size: 45px;
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+}
+
+.nasheeds {
+  font-family: Segoe UI;
+  font-size: 45px;
+  display: block;
+  margin-top: -45px;
+  color: white;
+  font-weight: 600;
+}
+
+.txt-nasheeds {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  display: block;
+  margin-top: -10px;
+  color: white;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.btn-lstn-container {
+  margin-left: 15px;
+  margin-top: 40px;
+}
+
+.btn-lstn {
+  font-family: 'Segoe UI';
+  border: none;
+  padding: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: rgb(252, 2, 84);
+  color: #f2f2f2;
+  font-weight: 600;
+}
+
+/*BENEFITS*/
+
+.benef-container {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.benef-content {
+  font-family: Montserrat, sans-serif;
+  margin-left: 15px;
+  margin-top: 20px;
+  color: #0A183D;
+}
+
+.no {
+  font-size: 45px;
+  display: block;
+  font-weight: 600;
+}
+
+.sub-need {
+  text-wrap: wrap;
+  margin-top: -30px;
+  font-size: 45px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.txt-benef {
+  font-family: Montserrat, sans-serif;
+  margin-top: -10px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+/* HELP PAGE/INSTRUCTIONS */
+
+.guide-container {
+  background-color: #1C294A;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.txt-guide {
+  font-family: 'Segoe UI';
+  font-size: 45px;
+  color: white;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+/* ACCOUNT */
+
+/* ACCOUNT PICTURE CONTAINER */
+
+.account-container {
+  margin-left: 60px;
+  margin-top: 50px;
+  /* display: inline-block; */
+}
+
+.pic-one {
+  position: relative;
+}
+
+.account-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  rgb(252, 2, 84);
+  position: absolute;
+  left: -25px;
+  margin-top: -5px;
+}
+
+.account-pic {
+  position: relative;
+  z-index: 100;
+}
+
+/* ACCOUNT TEXT CONTAINER */
+
+.tc-account {
+  width: 300px;
+}
+
+.title-account {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+}
+
+.txt-account {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  margin-top: -10px;
+  color: gray;
+  font-weight: 600;
+}
+
+/* LISTEN */
+
+/* LISTEN PICTURE CONTAINER */
+
+.listen-container {
+  margin-left: 60px;
+  margin-top: 50px;
+  /* display: inline-block; */
+}
+
+.pic-two {
+  position: relative;
+}
+
+.listen-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  rgb(252, 2, 84);
+  position: absolute;
+  left: -25px;
+  margin-top: -5px;
+}
+
+.listen-pic {
+  position: relative;
+  z-index: 100;
+}
+
+/* LISTEN TEXT CONTAINER */
+
+.tc-listen {
+  width: 300px;
+}
+
+.title-listen {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+}
+
+.txt-listen {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  margin-top: -10px;
+  color: gray;
+  font-weight: 600;
+}
+
+/* DOWNLOAD */
+
+/* DOWNLOAD PICTURE CONTAINER */
+
+.download-container {
+  margin-left: 60px;
+  margin-top: 50px;
+  /* display: inline-block; */
+}
+
+.pic-three {
+  position: relative;
+}
+
+.download-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  rgb(252, 2, 84);
+  position: absolute;
+  left: -25px;
+  margin-top: -5px;
+}
+
+.download-pic {
+  position: relative;
+  z-index: 100;
+  right: -7px;
+}
+
+/* DOWNLOAD TEXT CONTAINER */
+
+.tc-download {
+  width: 300px;
+}
+
+.title-download {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: 600;
+}
+
+.txt-download {
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  margin-top: -10px;
+  color: gray;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #0A183D;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-left: 10px;
+  display: block;
+}
+
+.txt-copyright {
+  color: rgb(104, 103, 103);
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-wrap: wrap;
+}
+
+.tiktok-container {
+  display: block;
+  margin-top: 20px;
+}
+
+/* MEDIA QUERIES FOR PC */
+
+@media (min-width: 1024px) {
+
+  .nav-content-2 {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .home-page-2:hover,
+  .nasheeds-page-2:hover,
+  .donations-page-2:hover,
+  .about-page-2:hover {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  .help-page-2:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+
+  .help-page-2:not(:hover) {
+    transition: 0.5s;
+  }
+
+  .span-2 {
+    display: flex;
+    align-items: center;
+  }
+
+    .guide-pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+}

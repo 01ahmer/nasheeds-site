@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/258c97a6d6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="btn-container">
+        <div class="btn-box">
+            <i class="fa fa-play audio-btn js-audio-btn" data-audio-src="${nasheed.source}"></i>
+            <audio download src="${nasheed.source}" class="audio js-audio"></audio>
+            <p class="audio-name">${nasheed.name}</p>
+            <a href="${nasheed.source}" download="${nasheed.name}">
+            <button class="download">Download</button></a>
+        </div>
+    </div>
+
+    <div class="o">
+        <i id="playButton" class="fa-solid fa-play"></i>
+        <audio id="audio" src="Nasheeds/Brigade103.mp3"></audio>
+    </div>
+
+
+
+    <script src="data/nasheed.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

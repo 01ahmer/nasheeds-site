@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nasheeds.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/258c97a6d6.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="Pictures/Favicon.ico">
+  <title>Nasheeds</title>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+<header>
+  
+  <div class="nav-container">
+    <img class="logo" src="Pictures/logo.png">
+  
+    <!--DUPLICATES-->
+  
+    <div class="nav-content-2">
+      <a class="home-page-2" href="index.html">Home</a>
+        <a class="nasheeds-page-2" href="nasheeds.html">Nasheeds</a>
+          <a class="donations-page-2" href="https://www.islamic-relief.org.uk/giving/appeals/palestine/#:~:text=Islamic%20Relief%20has%20been%20working,vital%20humanitarian%20and%20development%20assistance." target="_blank">Donations</a>
+        <span class="span-2" style="color: #f2f2f2;">&#124;</span>
+      <a class="help-page-2" href="index.html">Help</a>
+    </div>
+  
+    <!--MAIN MENU BUTTON-->
+  
+      <div class="menu-container">
+        <button class="btn-menu">
+          <div class="a"></div>
+            <div class="a"></div>
+          <div class="a"></div>
+        </button>
+      </div>
+  
+      <!--ORIGINAL-->
+  
+    <div class="nav-content">
+      <a class="home-page" href="index.html">Home</a>
+        <a class="nasheeds-page" href="nasheeds.html">Nasheeds</a>
+          <a class="donations-page" href="https://www.islamic-relief.org.uk/giving/appeals/palestine/#:~:text=Islamic%20Relief%20has%20been%20working,vital%20humanitarian%20and%20development%20assistance." target="_blank">Donations</a>
+        <span class="span" style="color: #f2f2f2;">|</span>
+      <a class="help-page" href="index.html">Help</a>
+    </div>
+  </div>
+</header>
+  
+<!--FAMOUS ARTISTS-->
+
+<div class="artist-container">
+  <div class="artist-content">
+  <ul>
+    <li style="--i:3;">Top Artists</li>
+    <li style="--i:2;">Musab Al Adani</li>
+    <li style="--i:1;">Muhammad Al Muqit</li>
+  </ul>
+  </div>
+</div>
+
+<!--NASHEEDS-->
+
+<div class="nasheeds-container">
+
+<div class="nasheeds-content">
+
+  <img class="circle-pfp" src="Pictures/circle-pfp.png">
+
+  <!-- SEARCH-BAR -->
+
+  <!-- <div class="search-container">
+    <div class="search-bar">
+      <input type="text" id="search-item" placeholder="Search"
+      onkeyup="search()">
+      <i class="fa-solid fa-magnifying-glass"
+      onclick="searchNasheed()"></i>
+    </div>
+  </div> -->
+
+  <div class="title-toolbar">
+    <h4 class="id">#</h4>
+    <h4 class="txt-title">Title</h4>
+  </div>
+
+  <div class="btn-container" id="btn-container">
+    <div class="btn-box">
+      <i class="fa fa-play audio-btn js-audio-btn" data-audio-src="${nasheed.source}"></i>
+      <audio download src="${nasheed.source}" class="audio js-audio"></audio>
+      <p class="audio-name">${nasheed.name}</p>
+      <a href="${nasheed.source}" download="${nasheed.name}">
+        <i class="fa-solid fa-download download"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-container">
+    <img class="footer-logo" src="Pictures/logo.png">
+      <div class="txt-copyright">
+        &#169; 2023 AHMER ASHFAQ &#124; ALL RIGHTS RESERVED
+      <div class="tiktok-container">
+        <a href="https://www.tiktok.com/@ahmer_347?is_from_webapp=1&sender_device=pc" target="_blank">
+          <i class="fa-brands fa-tiktok"
+          style="color: #686767;
+          font-size:18px;
+          cursor: pointer;">
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data/nasheeds-data.js"></script>
+<script src="nasheeds.js"></script>
+
+</body>
+</html>
